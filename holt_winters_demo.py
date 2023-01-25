@@ -27,9 +27,9 @@ print(df.describe())
 plt.figure(1)
 
 plt.plot(df)
-plt.xlabel("Months")
-plt.ylabel("Passengers")
-plt.title("Total passengers over time")
+plt.xlabel('Months')
+plt.ylabel('Passengers')
+plt.title('Total passengers over time')
 
 plt.show()
 
@@ -44,6 +44,7 @@ plt.show()
 
 
 # -------------------------------- MODEL --------------------------------
+
 model = ExponentialSmoothing(endog=df['Passengers'], seasonal_periods=12,
                              trend="mul", seasonal="mul").fit(optimized=1)
 df['Holtwinters'] = model.fittedvalues
