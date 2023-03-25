@@ -1,6 +1,6 @@
 # Folders
 resources/*
-datasets/*
+datasets/hourlyTimeSeries_2months.parquet
 
 # Files
 tests.py
