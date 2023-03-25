@@ -1,4 +1,10 @@
 # Folders
-ignore/
+resources/*
+datasets/*
 
 # Files
+tests.py
+hw_grid_search_results.csv
+training_test_division_results.txt
+general_data.txt
+__pycache__
