@@ -113,7 +113,7 @@ def exp_smoothing_configs(seasonal=[None]):
 
 # try different training/test set configurations
 def check_best_training_test_division(test_series, test_percentaje, cfg_list):
-    file = open('training_test_division_results.txt', 'w')
+    file = open('results\\training_test_division_results.txt', 'w')
     for i in range(0, 3):
         file.write('------------------------------------- ')
         file.write(str(int(100-test_percentaje*100)) + '/' + 
@@ -158,7 +158,7 @@ def export_results(best_results):
     results_df = pd.DataFrame(data=results)
     results_sorted_df = results_df.sort_values(by=['occurrences'],
                                                ascending=False)
-    results_sorted_df.to_csv('hw_grid_search_results.csv', index=None)
+    results_sorted_df.to_csv('results\\hw_grid_search_results.csv', index=None)
     
 
 #################################### MAIN ####################################
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         test_percentaje = 0.3
         check_best_training_test_division(test_series, test_percentaje, cfg_list)
     else:
-        data_lower_range, data_upper_range = 0, 5
+        data_lower_range, data_upper_range = 0, 1000
         n_test = int(0.1*data.shape[1])
     
         # grid search time series on the specified data range

@@ -1,0 +1,10 @@
+--------------- EXECUTION TIME ---------------
+Parallel -> 237s
+Not-Parallel -> 919s
+Training/test config -> 4860s
+4 cores -> 3.5 to 4 times faster
+Series -> 1.35m each
+1000 Series -> 78783s
+
+--------------- PARAMETERS ---------------
+Best training/test config -> 90/10

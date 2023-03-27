@@ -1,0 +1,17 @@
+############################### grid search on first 1000 time series ###############################
+
+occurrences,config,min_mase,max_mase
+283,"[None, False, 'add', 24, False, False]",0.5709933916972055,3.074921752706153
+204,"['add', True, 'add', 24, False, False]",0.5777244765383659,1.8660991919589223
+140,"['add', False, 'add', 24, False, False]",0.459099920387099,1.6271096624895083
+111,"['add', True, 'add', 24, False, True]",0.46479046130445645,inf
+71,"[None, False, 'add', 24, False, True]",0.5517189051670093,1.3440288058064966
+69,"['add', False, 'add', 24, False, True]",0.5965763994493517,1.6279239075980936
+44,"[None, False, None, 0, False, False]",0.0,316.06221699782833
+23,"['add', True, None, 0, False, False]",0.4961254732153866,10.596260839273544
+20,"['add', True, None, 0, False, True]",0.4381261598736239,1.2124316850797165
+19,"['add', False, None, 0, False, False]",0.5877545579617895,1.5081547409735876
+13,"['add', False, None, 0, False, True]",0.46955419830889955,1.8807079242168883
+3,"[None, False, None, 0, False, True]",0.8980238366484183,1.0033102474439926
+
+Elapsed time = 78783s (21.88h)
